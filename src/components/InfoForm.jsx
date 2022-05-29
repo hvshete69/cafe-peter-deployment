@@ -18,15 +18,15 @@ function InfoForm({isLoggedIn}) {
 
   const [userData, setUserData] = React.useState("");
 
-  React.useEffect(() => {
-    Axios.get("https://cafe-peter-mern.herokuapp.com/read").then((response) => {
-      console.log("RESP", response?.data);
-      setUserData(response?.data);
-      if(response?.data){
-        isLoggedIn(true);
-      }
-    });
-  }, []);
+  // React.useEffect(() => {
+  //   Axios.get("https://cafe-peter-mern.herokuapp.com/read").then((response) => {
+  //     console.log("RESP", response?.data);
+  //     setUserData(response?.data);
+  //     if(response?.data){
+  //       isLoggedIn(true);
+  //     }
+  //   });
+  // }, []);
 
   const addUser = (values) => {
     Axios.post("https://cafe-peter-mern.herokuapp.com/insert", {
