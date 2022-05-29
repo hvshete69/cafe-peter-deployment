@@ -1,31 +1,26 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
 
-export const Img = styled.img.attrs({ src: "/cafe-peter-menu/image-001.png" })`
-  height: 100px;
-  width: 100px;
-  z-index: 2000;
-`;
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 4;
-  width: 400px;
+  z-index: 999;
+  width: 350px;
   height: 100%;
-  background: #000000;
+  background: red;
   display: grid;
   align-items: center;
   top: 0;
   transition: 0.3s ease-in-out;
-  right: ${({ isOpen }) => (isOpen ? "0" : "-1000px")};
+  right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
   @media screen and (max-width: 400px) {
     width: 100%;
   }
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #ffffff;
+  color: #000;
 `;
 
 export const Icon = styled.div`
@@ -40,17 +35,12 @@ export const Icon = styled.div`
 `;
 
 export const SidebarMenu = styled.div`
-  position: fixed;
-  overflow-y: scroll;
-  width: 407px;
-  top: 0;
-  bottom: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 740px);
+  grid-template-rows: repeat(3, 80px);
   text-align: center;
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(3, 840px);
+    grid-template-rows: repeat(3, 60px);
   }
 `;
 
@@ -76,7 +66,7 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SidebarRoute = styled(Link)`
-  background: #e31837;
+  background: #000;
   white-space: nowrap;
   padding: 16px 64px;
   color: #fff;
@@ -86,7 +76,7 @@ export const SidebarRoute = styled(Link)`
   cursor: pointer;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-
+  
   &:hover {
     transition: 0.2s ease-in-out;
     background: #fff;

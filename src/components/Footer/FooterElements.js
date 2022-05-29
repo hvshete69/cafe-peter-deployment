@@ -10,9 +10,8 @@ export const FooterWrap = styled.div`
   padding: 16px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 1300px;
+  height: 200px;
   margin: 0 auto;
 `;
 
@@ -34,6 +33,7 @@ export const SocialMediaWrap = styled.div`
 
 export const SocialLogo = styled(Link)`
   color: #fff;
+  font-family: 'Roboto Condensed';
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -42,7 +42,6 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
 `;
 
 export const SocialIcons = styled.div`

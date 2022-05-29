@@ -14,6 +14,7 @@
 
   import { BrowserRouter } from "react-router-dom";
   import { Formik } from "formik";
+import FullMenu from "./components/FullMenu";
   function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(true);
 
@@ -44,6 +45,7 @@
         />
         {/* <Route path="/" element={<InfoForm />} /> */}
         <Route path="/" exact element={<InfoForm isLoggedIn={setIsLoggedIn}/>} />
+        <Route path="/fullMenu" exact element={<FullMenu/>}/>
       </Routes>
     </Router>
 

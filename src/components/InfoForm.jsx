@@ -1,15 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import Icon from "./Icon";
+import Icon, {
+  SocialIconLink,
+  SocialIcons,
+  SocialLogo,
+  SocialMedia,
+  SocialMediaWrap,
+} from "./Icon";
 import Input from "./Input";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import img1 from "../background1.jpg";
 import { Formik, useFormikContext } from "formik";
 import Axios from "axios";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin,
+  FaWhatsapp
+} from 'react-icons/fa';
 
-function InfoForm({isLoggedIn}) {
+
+function InfoForm({ isLoggedIn }) {
   let history = useNavigate();
 
   const redirect = (path) => {
@@ -29,7 +43,7 @@ function InfoForm({isLoggedIn}) {
   // }, []);
   React.useEffect(() => {
     isLoggedIn(true);
-  },[])
+  }, []);
 
   const addUser = (values) => {
     Axios.post("https://cafe-peter-mern.herokuapp.com/insert", {
@@ -152,17 +166,41 @@ function InfoForm({isLoggedIn}) {
                   Submit
                 </button>
                 <ForgotPassword>Follow Us On</ForgotPassword>
-                <IconsContainer>
-                  <Icon color={FacebookBackground}>
-                    <FaFacebookF />
-                  </Icon>
-                  <Icon color={InstagramBackground}>
-                    <FaInstagram />
-                  </Icon>
-                  <Icon color={TwitterBackground}>
-                    <FaTwitter />
-                  </Icon>
-                </IconsContainer>
+                <SocialMedia>
+                  <SocialMediaWrap>
+                    <SocialIcons>
+                      <SocialIconLink
+                        href="https://www.facebook.com/CafePeterVimanNagar/"
+                        target="_blank"
+                        aria-label="Facebook"
+                      >
+                        <FaFacebook />
+                      </SocialIconLink>
+                      <SocialIconLink
+                        href="https://www.instagram.com/cafepeterpune/?hl=en"
+                        target="_blank"
+                        aria-label="Instagram"
+                      >
+                        <FaInstagram />
+                      </SocialIconLink>
+                      <SocialIconLink
+                        href="https://twitter.com/cpd_pune"
+                        target="_blank"
+                        aria-label="Twitter"
+                        rel="noopener noreferrer"
+                      >
+                        <FaTwitter />
+                      </SocialIconLink>
+                      <SocialIconLink
+                        href="https://chat.whatsapp.com/KeuYpiajYYOHoddeUa6YHU"
+                        target="_blank"
+                        aria-label="Linkedin"
+                      >
+                        <FaWhatsapp />
+                      </SocialIconLink>
+                    </SocialIcons>
+                  </SocialMediaWrap>
+                </SocialMedia>
               </MainContainer>
             </form>
           )
@@ -172,38 +210,7 @@ function InfoForm({isLoggedIn}) {
   );
 }
 
-{
-  /* <MainContainer>
-<WelcomeText>Welcome</WelcomeText>
-<InputContainer>
-  <Input type="text" placeholder="Full Name" />
-  <Input type="text" placeholder="Phone Number" />
-  <Input type="password" placeholder="Email Address" />
-</InputContainer>
-<ButtonContainer>
-  <Link to="/landingPage">
-    {" "}
-    <Button content="Submit" />{" "}
-  </Link>
-</ButtonContainer>
-<LoginWith>OR LOGIN WITH</LoginWith>
-<HorizontalRule /> 
-}
-{
-  /* <ForgotPassword>Follow Us On</ForgotPassword>
-<IconsContainer>
-  <Icon color={FacebookBackground}>
-    <FaFacebookF />
-  </Icon>
-  <Icon color={InstagramBackground}>
-    <FaInstagram />
-  </Icon>
-  <Icon color={TwitterBackground}>
-    <FaTwitter />
-  </Icon>
-</IconsContainer>
-</MainContainer> */
-}
+
 
 const MainContainer = styled.div`
   background-image: url(${img1});
