@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/cafe-peter-deployment/static/css/main.96122a19.chunk.css",
-    "main.js": "/cafe-peter-deployment/static/js/main.cf787f85.chunk.js",
-    "main.js.map": "/cafe-peter-deployment/static/js/main.cf787f85.chunk.js.map",
-    "runtime-main.js": "/cafe-peter-deployment/static/js/runtime-main.96e2d885.js",
-    "runtime-main.js.map": "/cafe-peter-deployment/static/js/runtime-main.96e2d885.js.map",
-    "static/js/2.c864f0ba.chunk.js": "/cafe-peter-deployment/static/js/2.c864f0ba.chunk.js",
-    "static/js/2.c864f0ba.chunk.js.map": "/cafe-peter-deployment/static/js/2.c864f0ba.chunk.js.map",
-    "static/js/3.9c6d2cc6.chunk.js": "/cafe-peter-deployment/static/js/3.9c6d2cc6.chunk.js",
-    "static/js/3.9c6d2cc6.chunk.js.map": "/cafe-peter-deployment/static/js/3.9c6d2cc6.chunk.js.map",
+    "main.js": "/cafe-peter-deployment/static/js/main.83664b18.chunk.js",
+    "main.js.map": "/cafe-peter-deployment/static/js/main.83664b18.chunk.js.map",
+    "runtime-main.js": "/cafe-peter-deployment/static/js/runtime-main.59d90c55.js",
+    "runtime-main.js.map": "/cafe-peter-deployment/static/js/runtime-main.59d90c55.js.map",
+    "static/css/2.4ce9e501.chunk.css": "/cafe-peter-deployment/static/css/2.4ce9e501.chunk.css",
+    "static/js/2.a432c0b5.chunk.js": "/cafe-peter-deployment/static/js/2.a432c0b5.chunk.js",
+    "static/js/2.a432c0b5.chunk.js.map": "/cafe-peter-deployment/static/js/2.a432c0b5.chunk.js.map",
+    "static/js/3.366ea27c.chunk.js": "/cafe-peter-deployment/static/js/3.366ea27c.chunk.js",
+    "static/js/3.366ea27c.chunk.js.map": "/cafe-peter-deployment/static/js/3.366ea27c.chunk.js.map",
     "index.html": "/cafe-peter-deployment/index.html",
+    "static/css/2.4ce9e501.chunk.css.map": "/cafe-peter-deployment/static/css/2.4ce9e501.chunk.css.map",
     "static/css/main.96122a19.chunk.css.map": "/cafe-peter-deployment/static/css/main.96122a19.chunk.css.map",
-    "static/js/2.c864f0ba.chunk.js.LICENSE.txt": "/cafe-peter-deployment/static/js/2.c864f0ba.chunk.js.LICENSE.txt",
+    "static/js/2.a432c0b5.chunk.js.LICENSE.txt": "/cafe-peter-deployment/static/js/2.a432c0b5.chunk.js.LICENSE.txt",
     "static/media/background1.1873142a.jpg": "/cafe-peter-deployment/static/media/background1.1873142a.jpg",
     "static/media/coffee-23.d72ac7f3.jpg": "/cafe-peter-deployment/static/media/coffee-23.d72ac7f3.jpg",
     "static/media/featured3.1285e7e2.jpg": "/cafe-peter-deployment/static/media/featured3.1285e7e2.jpg",
@@ -39,9 +41,10 @@
     "static/media/sweet3.c495c742.jpg": "/cafe-peter-deployment/static/media/sweet3.c495c742.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.96e2d885.js",
-    "static/js/2.c864f0ba.chunk.js",
+    "static/js/runtime-main.59d90c55.js",
+    "static/css/2.4ce9e501.chunk.css",
+    "static/js/2.a432c0b5.chunk.js",
     "static/css/main.96122a19.chunk.css",
-    "static/js/main.cf787f85.chunk.js"
+    "static/js/main.83664b18.chunk.js"
   ]
 }
