@@ -27,6 +27,9 @@ function InfoForm({isLoggedIn}) {
   //     }
   //   });
   // }, []);
+  React.useEffect(() => {
+    isLoggedIn(true);
+  },[])
 
   const addUser = (values) => {
     Axios.post("https://cafe-peter-mern.herokuapp.com/insert", {
