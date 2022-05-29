@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cafe-peter-deployment/static/css/main.96122a19.chunk.css",
-    "main.js": "/cafe-peter-deployment/static/js/main.61052417.chunk.js",
-    "main.js.map": "/cafe-peter-deployment/static/js/main.61052417.chunk.js.map",
+    "main.js": "/cafe-peter-deployment/static/js/main.cf787f85.chunk.js",
+    "main.js.map": "/cafe-peter-deployment/static/js/main.cf787f85.chunk.js.map",
     "runtime-main.js": "/cafe-peter-deployment/static/js/runtime-main.96e2d885.js",
     "runtime-main.js.map": "/cafe-peter-deployment/static/js/runtime-main.96e2d885.js.map",
     "static/js/2.c864f0ba.chunk.js": "/cafe-peter-deployment/static/js/2.c864f0ba.chunk.js",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.96e2d885.js",
     "static/js/2.c864f0ba.chunk.js",
     "static/css/main.96122a19.chunk.css",
-    "static/js/main.61052417.chunk.js"
+    "static/js/main.cf787f85.chunk.js"
   ]
 }
